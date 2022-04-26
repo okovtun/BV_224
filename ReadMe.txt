@@ -3,6 +3,13 @@ https://www.youtube.com/watch?v=ahdr2uT2Obk&list=PLeqyOOqxeiINZ37jcEwuwV6LoJmVZ1
 https://meet.google.com/mho-khdw-fhj
 
 TODO:
+Поменять местами две переменные.
+	int a = 2, b = 3;
+	cout << a << "\t" << b << endl;
+	//код, который меняет переменные 'a' и 'b' местами.
+	cout << a << "\t" << b << endl;
+
+DONE:
 0. Выучить типы данных!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 1. Почитать:https://github.com/okovtun/BV_224/blob/master/DataTypes/DataTypes.pdf
 2. Попытаться решить задачи: https://github.com/okovtun/BV_224/blob/master/DataTypes/DataTypes/VariablesTask.pdf
