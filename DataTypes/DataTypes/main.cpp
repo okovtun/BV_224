@@ -8,6 +8,7 @@ using std::endl;;
 //#define INTEGRAL_TYPES
 //#define FLOATING_TYPES
 //#define DECLARATION_OF_VARIABLES
+//#define CONSTANTS
 
 void main()
 {
@@ -64,6 +65,7 @@ void main()
 	int cammelCaseStyle;//Маленький верблюд
 	//Верблюдов еще называют PascalCaseStyle
 
+#ifdef CONSTANTS
 	int speed = 0;
 	const int MAX_SPEED = 250;
 	speed = 50;
@@ -81,7 +83,18 @@ void main()
 	cout << sizeof('@') << endl;
 	cout << sizeof("@") << endl;
 	cout << sizeof("Hello") << endl;
-	'Hello';
+	//'Hello';  
+#endif // CONSTANTS
+
+	int a = 2, b = 3;
+	cout << a << "\t" << b << endl;
+	/*int c = a;
+	a = b;
+	b = c;*/
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	cout << a << "\t" << b << endl;
 }
 
 /*
