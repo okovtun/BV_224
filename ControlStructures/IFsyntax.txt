@@ -1,0 +1,47 @@
+Конструкция if...else...
+
+if(Condition)
+{
+	...;
+	Code1;
+	...;
+}
+else
+{
+	...;
+	Code2;
+	...;
+}
+
+Condition - это условие, по которому if делает выбор.
+Условие - это сравнение!!!
+
+if(Condition1)
+{
+	...;
+	Code1;
+	...;
+}
+else if(Condition2)
+{
+	...;
+	Code2;
+	...;
+}
+.....
+.....
+else if(ConditionN)
+{
+	...;
+	CodeN
+	...;
+}
+else
+{
+	...;
+	Default code;
+	...;
+}
+
+Cond1, Cond2, ... CondN
+Code1, Code2, ... CodeN

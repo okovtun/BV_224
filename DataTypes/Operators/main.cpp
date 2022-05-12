@@ -5,7 +5,9 @@ using namespace std;
 //#define ARITHMETICAL_OPERATORS	//Арифметические операторы
 //#define ASSIGNMENT_OPERATOR	//Оператор присваивания =
 //#define INCREMENT_DECREMENT	//(++/--)
-#define COMPOUND_ASSIGNMENTS	//Составные присваивания
+//#define COMPOUND_ASSIGNMENTS	//Составные присваивания
+//#define HOME_WORK
+#define COMPARISON_OPERATORS	//Операторы сравнения
 
 void main()
 {
@@ -56,6 +58,7 @@ Binary:	+, -, *, /, % - остаток от деления
 	cout << j << endl;	//1  
 #endif // INCREMENT_DECREMENT
 
+#ifdef COMPOUND_ASSIGNMENTS
 	int a = 2;
 	int b = 3;
 	//a = a + b;
@@ -65,6 +68,26 @@ Binary:	+, -, *, /, % - остаток от деления
 	a /= b;
 	a %= b;
 	cout << a << endl;
+#endif // COMPOUND_ASSIGNMENTS
+
+#ifdef HOME_WORK
+	/*int i = 3;
+i = ++i + ++i;
+cout << i << endl;*/
+
+/*int i = 3;
+i = ++i + 1 + ++i * 2;
+cout << i << endl;*/
+
+	int i = 3;
+	i = ++i + 1 + (++i *= 2);
+	cout << i << endl;
+	//const int j = 4;	++j;  
+#endif // HOME_WORK
+
+	cout << (!true == false) << endl;
+	cout << (true || false || false) << endl;
+	cout << (false && true && true) << endl;
 }
 
 //Expression - это синтаксическая конструкция, состоящая из операндов и операторов.
