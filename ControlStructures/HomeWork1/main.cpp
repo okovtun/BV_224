@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -13,24 +13,24 @@ void main()
 	setlocale(LC_ALL, "Russian");
 #ifdef TASK_1
 	int t;
-	cout << "Ââåäèòå òåìïåðàòóðó âîçäóõà: "; cin >> t;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ Ð²Ð¾Ð·Ð´ÑƒÑ…Ð°: "; cin >> t;
 	if (t > 0)
 	{
-		cout << "Íà óëèöå òåïëî" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ‚ÐµÐ¿Ð»Ð¾" << endl;
 	}
 	else if (t < 0)
 	{
-		cout << "Íà óëèöå õîëîäíî" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ…Ð¾Ð»Ð¾Ð´Ð½Ð¾" << endl;
 	}
 	else
 	{
-		cout << "Íà óëèöå 0" << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ 0" << endl;
 	}
 #endif // TASK_1
 
-	double a, b;	//×èñëà, ââîäèìûå ñ êëàâèàòóðû
-	char s;	//Sign - çíàê îïåðàöèè
-	cout << "Ââåäèòå àðèôìåòè÷åñêîå âûðàæåíèå: ";
+	double a, b;	//Ð§Ð¸ÑÐ»Ð°, Ð²Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ðµ Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹
+	char s;	//Sign - Ð·Ð½Ð°Ðº Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: ";
 	cin >> a >> s >> b;
 	//cout << a << s << b << endl;
 	if (s == '+')
