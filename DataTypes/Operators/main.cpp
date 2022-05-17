@@ -1,4 +1,5 @@
-﻿#include<iostream>
+﻿#pragma warning(disable:4326)
+#include<iostream>
 using namespace std;
 
 //#define OPERATORS_TYPES
@@ -6,7 +7,7 @@ using namespace std;
 //#define ASSIGNMENT_OPERATOR	//Оператор присваивания =
 //#define INCREMENT_DECREMENT	//(++/--)
 //#define COMPOUND_ASSIGNMENTS	//Составные присваивания
-//#define HOME_WORK
+#define HOME_WORK
 #define COMPARISON_OPERATORS	//Операторы сравнения
 
 void main()
