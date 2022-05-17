@@ -6,6 +6,8 @@ https://meet.google.com/mho-khdw-fhj
 ///////////////////			Control structures		///////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
+Conspect:https://github.com/okovtun/BV_224/blob/master/DataTypes/DataTypes.pdf
+
 TODO:
 1. Написать программу, которая по введенной температуре воздуха определяет
    на улице тепло, или же холодно. 

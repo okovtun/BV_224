@@ -28,6 +28,7 @@ void main()
 	}
 #endif // TASK_1
 
+#ifdef TASK_2
 	double a, b;	//Числа, вводимые с клавиатуры
 	char s;	//Sign - знак операции
 	cout << "Введите арифметическое выражение: ";
@@ -53,4 +54,33 @@ void main()
 	{
 		cout << "Error: no operation" << endl;
 	}
+#endif // TASK_2
+
+
+	//switch
+#define CONST_1 1
+#define CONST_2 2
+#define CONST_N 'N'
+	int var = 0;
+	int code1 = 0;
+	int code2 = 0;
+	int codeN = 0;
+	int default_code = 0;
+
+
+	switch (var)
+	{
+	case CONST_1: code1; break;
+	case CONST_2: code2; break;
+		//...........
+		//...........
+	case CONST_N: codeN; break;
+	default: default_code;
+	}
+
+
+
+
+
+
 }
