@@ -1,0 +1,16 @@
+for - это цикл на заданное число итераций
+
+
+
+for(counter; condition; expression)
+{
+	....;
+	group-of-statements;
+	....;
+}
+
+
+
+
+counter - это счетчик цикла. i
+condition - это условие продолжения, или завершения цикла.
