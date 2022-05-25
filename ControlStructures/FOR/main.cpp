@@ -1,4 +1,4 @@
-//FOR
+﻿//FOR
 #include<iostream>
 using namespace std;
 
