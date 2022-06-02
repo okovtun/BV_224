@@ -12,6 +12,10 @@ Online compiler:http://cpp.sh/
 Conspect:https://github.com/okovtun/BV_224/blob/master/DataTypes/DataTypes.pdf
 
 TODO:
+Вывести все фигуры из этого файла:
+https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
+
+DONE:
 1. Вывести на экран таблицу умножения;
 2. Вывести на экран таблицу Пифагора;
 
