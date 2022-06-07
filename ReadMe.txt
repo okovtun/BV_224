@@ -13,7 +13,9 @@ Conspect:https://github.com/okovtun/BV_224/blob/master/DataTypes/DataTypes.pdf
 
 TODO:
 Вывести все фигуры из этого файла:
-https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
+1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
+2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg
+
 
 DONE:
 1. Вывести на экран таблицу умножения;
