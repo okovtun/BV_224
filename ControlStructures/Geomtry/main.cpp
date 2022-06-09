@@ -7,7 +7,7 @@ using namespace std;
 //#define TRIANGLE_3
 //#define TRIANGLE_4
 //#define ROMBUS_1
-#define ROMBUS_2
+//#define ROMBUS_2
 
 void main()
 {
@@ -81,10 +81,11 @@ void main()
 	}
 #endif // ROMBUS_1
 
+#ifdef ROMBUS_2
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i; j < n; j++)cout << " "; cout << "/";
-		for (int j = 0; j < i*2; j++)cout << " "; cout << "\\";
+		for (int j = 0; j < i * 2; j++)cout << " "; cout << "\\";
 		cout << endl;
 	}
 	for (int i = 0; i < n; i++)
@@ -93,4 +94,15 @@ void main()
 		for (int j = 0; j < (n - i - 1) * 2; j++)cout << " "; cout << "/";
 		cout << endl;
 	}
+#endif // ROMBUS_2
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+			//if ((i + j) % 2 == 0)cout << "+ ";else cout << "- ";
+			//(i + j) % 2 == 0 ? cout << "+ " : cout << "- ";
+			//cout << ((i + j) % 2 == 0 ? "+ " : "- ");
+			cout << ((i + j) % 2 ? "+ " : "- ");
+		cout << endl;
+	}
+	true;
 }

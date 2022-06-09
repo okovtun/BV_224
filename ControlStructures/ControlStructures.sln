@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shooter", "Shooter\Shooter.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geomtry", "Geomtry\Geomtry.vcxproj", "{8A4C280A-32E4-48A4-B669-5A60AE642045}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chess1", "Chess1\Chess1.vcxproj", "{938280F7-8B6E-46B3-8789-E89A82BDB56E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{8A4C280A-32E4-48A4-B669-5A60AE642045}.Release|x64.Build.0 = Release|x64
 		{8A4C280A-32E4-48A4-B669-5A60AE642045}.Release|x86.ActiveCfg = Release|Win32
 		{8A4C280A-32E4-48A4-B669-5A60AE642045}.Release|x86.Build.0 = Release|Win32
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Debug|x64.ActiveCfg = Debug|x64
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Debug|x64.Build.0 = Debug|x64
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Debug|x86.ActiveCfg = Debug|Win32
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Debug|x86.Build.0 = Debug|Win32
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Release|x64.ActiveCfg = Release|x64
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Release|x64.Build.0 = Release|x64
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Release|x86.ActiveCfg = Release|Win32
+		{938280F7-8B6E-46B3-8789-E89A82BDB56E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
