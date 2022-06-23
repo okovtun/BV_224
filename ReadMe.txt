@@ -3,6 +3,9 @@ https://www.youtube.com/watch?v=ahdr2uT2Obk&list=PLeqyOOqxeiINZ37jcEwuwV6LoJmVZ1
 https://meet.google.com/mho-khdw-fhj
 https://discord.gg/4eemA56w
 
+TOREAD:
+https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
+
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////				Arrays				///////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -10,6 +13,10 @@ https://discord.gg/4eemA56w
 
 ThinkPad:
 https://www.youtube.com/watch?v=VF2j7V2ImTg
+
+TODO:
+В проекте Numerics реализовать перевод десятичного числа 
+в Шестнадцатеричную систему счисления (Hexadecimal).
 
 TODO:
 Есть массив из 10 элементов. Значения некоторых элементов в этом массиве заведомо повторяются,
