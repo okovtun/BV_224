@@ -5,6 +5,7 @@ https://discord.gg/4eemA56w
 
 TOREAD:
 https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
+http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////				Arrays				///////////////////////

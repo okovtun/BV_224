@@ -1,34 +1,64 @@
 #include<iostream>
 using namespace std;
 
+#define Hexadecimal
 #define tab "\t"
 
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int n = 10;
-	int arr[n];
-	int nul[n];
+#ifdef Hexadecimal
+	int chislo;
+	const int MAX_SIZE = 8;
+	int ost[MAX_SIZE] = {};
+	cout << "¬ведите число: "; cin >> chislo;
 
-	cout << "¬ведите значение элементов массива: ";
-	for (int i = 0; i < n; i++) cin >> arr[i];                 //ввод массива
-
-	for (int i = 0; i < n; i++) cout << arr[i] << tab;         //вывод массива
-	cout << endl;
-
-	for (int i = 0; i < n; i++) nul[i] = arr[i];               //создание копии массива
-
-	int shift;
-	cout << endl << "¬ведите желаемый сдвиг: "; cin >> shift;  // ввод сдвига
-
-	int t = n - shift;
-	for (int i = 0; i < t; i++) arr[i] = arr[i + shift];       //сдвиг первых t €чеек
-
-	for (int i = 0; i < shift; i++)                            //сдвиг "хвоста" €чеек (n-t=shift)
+	int i = 0;
+	//int kolvo = 0;
+	while (chislo)
 	{
-		arr[t] = nul[i];
-		t++;
+		ost[i] = chislo % 16;
+		chislo = chislo / 16;
+		i++;
+		//kolvo = i;               //мы знаем сколько чисел у нас в остатке
 	}
+	for (--i; i >= 0; i--)
+	{
+		//cout << ost[i] << tab;   //выводим остаток в обратном пор€дке
 
-	for (int i = 0; i < n; i++) cout << arr[i] << tab;         //вывод сдвинутого массива
+		const int n = 6;                       //массив дл€ букв
+		int arr[n] = { 65,66,67,68,69,70 };
+		int j = 0;
+		int y = 0;
+		bool exit = true;
+		while (j != ost[i])
+		{
+			j = y;
+			for (int m = 0; m < 10; m++)  //for дл€ цифр
+			{
+				if (j == ost[i])
+				{
+					cout << ost[i]; //содержимое €чейки совпадает с нашим числом
+					exit = false;
+					break;
+				}
+				j++;
+			} y = j;
+			if (exit == false) break;
+
+			for (int k = 0; k < 6; k++)     //for дл€ букв
+			{
+				if (j == ost[i])
+				{
+					j = arr[k];
+					cout << (char)j;
+					exit = false;
+					break;
+				}
+				j++;
+			} if (exit == false) break;
+			cout << endl;
+		}
+	}
 }
+#endif
