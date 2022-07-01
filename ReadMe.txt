@@ -11,6 +11,11 @@ http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 ///////////////////				Arrays				///////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
+https://www.youtube.com/watch?v=llwuoLzPbdE
+TODO:
+1. Зарегистрироваться на github.com;
+2. В проекте 2D реализовать алгоритм умножения матриц
+3. Найти определитель матрицы третьего порядка используя алгоритм Саррюса;
 
 ThinkPad:
 https://www.youtube.com/watch?v=VF2j7V2ImTg
