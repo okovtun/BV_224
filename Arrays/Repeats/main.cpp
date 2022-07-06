@@ -65,6 +65,8 @@ void main()
 		{
 			if (arr[i] == arr[j])count++;
 		}
-		if (count > 0)cout << arr[i] << " повторяется " << count << " раз\n";
+		//https://cplusplus.com/reference/cstdio/printf/?kw=printf
+		if (count > 0)printf("%i повторяется %i раз\n", arr[i], count);
+			//cout << arr[i] << " повторяется " << count << " раз\n";
 	}
 }

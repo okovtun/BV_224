@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Repeats", "Repeats\Repeats.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2D", "2D\2D.vcxproj", "{77F54CC8-CCF3-4FEF-A595-D69BC841C152}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sirrius", "Sirrius\Sirrius.vcxproj", "{E63EC0DF-6B82-44A8-AE87-B287F3F32281}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{77F54CC8-CCF3-4FEF-A595-D69BC841C152}.Release|x64.Build.0 = Release|x64
 		{77F54CC8-CCF3-4FEF-A595-D69BC841C152}.Release|x86.ActiveCfg = Release|Win32
 		{77F54CC8-CCF3-4FEF-A595-D69BC841C152}.Release|x86.Build.0 = Release|Win32
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Debug|x64.ActiveCfg = Debug|x64
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Debug|x64.Build.0 = Debug|x64
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Debug|x86.ActiveCfg = Debug|Win32
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Debug|x86.Build.0 = Debug|Win32
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Release|x64.ActiveCfg = Release|x64
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Release|x64.Build.0 = Release|x64
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Release|x86.ActiveCfg = Release|Win32
+		{E63EC0DF-6B82-44A8-AE87-B287F3F32281}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
