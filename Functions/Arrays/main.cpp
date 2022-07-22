@@ -66,7 +66,7 @@ void main()
 	cout << "Минимальное значение в массиве: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
 
-	double d_arr_2[ROWS][COLS];
+	int d_arr_2[ROWS][COLS];
 	FillRand(d_arr_2, ROWS, COLS);
 	Print(d_arr_2, ROWS, COLS);
 	cout << "Сумма элементов массива: " << Sum(d_arr_2, ROWS, COLS) << endl;
