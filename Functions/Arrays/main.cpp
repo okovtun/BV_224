@@ -5,6 +5,7 @@
 #include"Print.h"
 #include"Sort.h"
 #include"Statistics.h"
+//#include"Statistics.cpp"//LNK2005
 
 void main()
 {
