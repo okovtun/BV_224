@@ -4,6 +4,9 @@ https://meet.google.com/mho-khdw-fhj
 https://discord.gg/4eemA56w
 
 TOREAD:
+https://www.intel.com/content/www/us/en/silicon-innovations/intel-tick-tock-model-general.html
+https://3dnews.ru/1003181/obzor-protsessora-amd-ryzen-threadripper-3990x
+
 https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
 http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 
