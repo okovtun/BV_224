@@ -3,18 +3,6 @@ https://www.youtube.com/watch?v=ahdr2uT2Obk&list=PLeqyOOqxeiINZ37jcEwuwV6LoJmVZ1
 https://meet.google.com/mho-khdw-fhj
 https://discord.gg/4eemA56w
 
-TOWATCH:
-https://www.youtube.com/watch?v=tOS3Exwhd9w&t=1s
-https://www.youtube.com/watch?v=z0jQZxH7NgM&t=2s Не для слабонервных!!! :-)
-https://www.youtube.com/watch?v=06MYYB9bl70 Вот как надо тестить процы! (тоже НЕ для слабонервных)))
-https://www.youtube.com/watch?v=XXs0I5kuoX4&t=1097s НЕ ПОВТОРЯЙТЕ ЭТОТ ТРЮК В ДОМАШНИХ УСЛОВИЯХ!!!!!
-https://www.youtube.com/watch?v=FirsCzTnbdQ&t=502s  ЭТОТ ТОЖЕ!!!)
-https://www.youtube.com/watch?v=PGJ4YkEHx34 Ну это вообще жжжесть, я видел как без фена сравли, тоже тисками...
-
-TOREAD:
-https://www.intel.com/content/www/us/en/silicon-innovations/intel-tick-tock-model-general.html
-https://3dnews.ru/1003181/obzor-protsessora-amd-ryzen-threadripper-3990x
-
 https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
 http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 

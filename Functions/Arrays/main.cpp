@@ -1,16 +1,20 @@
 ﻿//Arrays
 #include<iostream>
 using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 #define tab "\t"
 
-const int ROWS = 3;
-const int COLS = 4;
+const int ROWS = 10;
+const int COLS = 10;
 
 void FillRand(int arr[], const int n);
 void FillRand(double arr[], const int n);
 void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
 void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS);
+void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 void Print(int arr[], const int n);
 void Print(double arr[], const int n);
@@ -19,6 +23,8 @@ void Print(double arr[ROWS][COLS], const int ROWS, const int COLS);
 
 void Sort(int arr[], const int n);
 void Sort(double arr[], const int n);
+void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS);
+void Sort(double arr[ROWS][COLS], const int ROWS, const int COLS);
 
 int Sum(int arr[], const int n);
 double Sum(double arr[], const int n);
@@ -57,7 +63,7 @@ void main()
 	cout << "Сумма элементов массива: " << Sum(brr, SIZE) << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(brr, SIZE) << endl;
 
-	
+
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
 	Print(i_arr_2, ROWS, COLS);
@@ -67,12 +73,25 @@ void main()
 	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
 
 	int d_arr_2[ROWS][COLS];
-	FillRand(d_arr_2, ROWS, COLS);
+	//FillRand(d_arr_2, ROWS, COLS);
+	UniqueRand(d_arr_2, ROWS, COLS);
 	Print(d_arr_2, ROWS, COLS);
+	for (int i = 0; i < ROWS*COLS; i++)
+	{
+		cout << d_arr_2[0][i] << tab;
+	}
+	cout << endl;
 	cout << "Сумма элементов массива: " << Sum(d_arr_2, ROWS, COLS) << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(d_arr_2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(d_arr_2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr_2, ROWS, COLS) << endl;
+	Sort(d_arr_2, ROWS, COLS);
+	Print(d_arr_2, ROWS, COLS);
+	for (int i = 0; i < ROWS*COLS; i++)
+	{
+		cout << d_arr_2[0][i] << tab;
+	}
+	cout << endl;
 }
 
 void FillRand(int arr[], const int n)
@@ -113,7 +132,50 @@ void FillRand(double arr[ROWS][COLS], const int ROWS, const int COLS)
 		}
 	}
 }
+void UniqueRand(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	/*for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			bool unique;	//Флаг уникальности
+			do
+			{
+				arr[i][j] = rand() % (ROWS*COLS);
+				unique = true;	//Предполагаем, что сгенерировалось уникально случайное число
+				//но, это нужно проветрить:
+				for (int k = 0; k <= i; k++)
+				{
+					for (int l = 0; l < (k == i ? j : COLS); l++)
+					{
+						if (arr[i][j] == arr[k][l])
+						{
+							unique = false;
+							break;
+						}
+					}
+					if (!unique)break;
+				}
 
+			} while (!unique);
+		}
+	}*/
+
+	//DISCLAIMER: этот способ работает только cо СТАТИЧЕСКИМИ ДВУМЕРНЫМИ МАССИВАМИ,
+	//С ДИНАМИЧЕСКИМИ ДВУМЕРНЫМИ МАССИВАМИ ЭТО НЕ РАБОТАЕТ!!!!!!!!!!!!!!!!!!!!!!!!!
+	for (int i = 0; i < ROWS*COLS; i++)
+	{
+		arr[0][i] = rand() % (ROWS*COLS);
+		for (int j = 0; j < i; j++)
+		{
+			if (arr[0][i] == arr[0][j])
+			{
+				i--;
+				break;
+			}
+		}
+	}
+}
 void Print(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
@@ -140,6 +202,7 @@ void Print(int arr[ROWS][COLS], const int ROWS, const int COLS)
 		}
 		cout << endl;
 	}
+	cout << endl;
 }//Functions templates
 void Print(double arr[ROWS][COLS], const int ROWS, const int COLS)
 {
@@ -179,6 +242,53 @@ void Sort(double arr[], const int n)
 				double buffer = arr[i];
 				arr[i] = arr[j];
 				arr[j] = buffer;
+			}
+		}
+	}
+}
+void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	/*int iterations = 0;
+	int exchanges = 0;
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			for (int k = i; k < ROWS; k++)
+			{
+				//int l;
+				//if (k == i)l = j + 1;
+				//else l = 0;
+				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
+				{
+					//arr[i][j] - выбранный элемент
+					//arr[k][l] - перебираемый элемент
+					iterations++;
+					if (arr[k][l] < arr[i][j])
+					{
+						int buffer = arr[i][j];
+						arr[i][j] = arr[k][l];
+						arr[k][l] = buffer;
+						exchanges++;
+					}
+				}
+			}
+		}
+	}
+	cout << "Массив отсортирован за " << iterations << " итераций" << endl;
+	cout << "При этом было выполнено " << exchanges << " обменов элементов" << endl;*/
+
+	//DISCLAIMER: этот способ работает только cо СТАТИЧЕСКИМИ ДВУМЕРНЫМИ МАССИВАМИ,
+	//С ДИНАМИЧЕСКИМИ ДВУМЕРНЫМИ МАССИВАМИ ЭТО НЕ РАБОТАЕТ!!!!!!!!!!!!!!!!!!!!!!!!!
+	for (int i = 0; i < ROWS*COLS; i++)
+	{
+		for (int j = i + 1; j < ROWS*COLS; j++)
+		{
+			if (arr[0][j] < arr[0][i])
+			{
+				int buffer = arr[0][i];
+				arr[0][i] = arr[0][j];
+				arr[0][j] = buffer;
 			}
 		}
 	}
