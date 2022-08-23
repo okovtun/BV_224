@@ -1,5 +1,11 @@
 Electronics workbench program
 
+Mainboard:
+Ребят, попробуйте на ark.intel.com найти серию чипсетов для последнего поколения IntelCore и ознакомиться с их характеристиками.
+
+ark.intel.com
+https://www.intel.com/content/www/us/en/processors/processor-numbers.html
+
 =====================	CPU	  =====================
 
 TOWATCH:
