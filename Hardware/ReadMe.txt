@@ -1,5 +1,18 @@
 Electronics workbench program
 
+Chassis:
+https://www.citilink.ru/product/blok-pitaniya-seasonic-atx-850w-syncro-q704-80-platinum-24-2x-4-4-pin-1561924/properties/
+https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
+
+Cooling
+!!!Очень интересный видос про водяные системы охлаждения:
+https://www.youtube.com/watch?v=Tidws9NKS6c&t=42s !!!
+
+https://www.dns-shop.ru/product/376bac05499230b1/podstavka-dla-noutbuka-deepcool-multicore-x6-cernyj/characteristics/
+https://www.dns-shop.ru/product/9bef303949e2526f/podstavka-dla-noutbuka-deepcool-n8-cernyj/
+https://www.dns-shop.ru/product/f902c38d9fbd526f/podstavka-dla-noutbuka-deepcool-n1-cernyj/characteristics/
+https://www.dns-shop.ru/product/ad4bd9b595a83332/podstavka-dla-noutbuka-trust-gxt1125-cernyj/characteristics/
+
 Mainboard:
 Ребят, попробуйте на ark.intel.com найти серию чипсетов для последнего поколения IntelCore и ознакомиться с их характеристиками.
 
