@@ -1,5 +1,8 @@
 Electronics workbench program
 
+Video:
+https://www.ixbt.com/video3/guide/guide-09.shtml
+
 Chassis:
 https://www.citilink.ru/product/blok-pitaniya-seasonic-atx-850w-syncro-q704-80-platinum-24-2x-4-4-pin-1561924/properties/
 https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
