@@ -1,5 +1,10 @@
 Electronics workbench program
 
+Storage:
+https://rlab.ru/doc/hdd_from_inside.html
+https://www.youtube.com/watch?v=7onkTUts_-w&t=12s
+https://www.youtube.com/watch?v=A8KJwdVKTok&t=47s
+
 Video:
 https://www.ixbt.com/video3/guide/guide-09.shtml
 
