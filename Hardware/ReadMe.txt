@@ -1,6 +1,7 @@
 Electronics workbench program
 
 Storage:
+http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 https://rlab.ru/doc/hdd_from_inside.html
 https://www.youtube.com/watch?v=7onkTUts_-w&t=12s
 https://www.youtube.com/watch?v=A8KJwdVKTok&t=47s
