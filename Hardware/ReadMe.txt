@@ -1,5 +1,9 @@
 Electronics workbench program
 
+TODO:
+1. Вычислить максимально возможный размер раздела для MBR;
+
+
 Storage:
 http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 https://rlab.ru/doc/hdd_from_inside.html
