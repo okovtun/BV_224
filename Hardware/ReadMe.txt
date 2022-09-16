@@ -1,5 +1,14 @@
 Electronics workbench program
 
+TOREAD:
+https://www.ntfs.com/guid-part-table.htm
+
+VMware:
+https://gist.github.com/williamgh2019/cc2ad94cc18cb930a0aab42ed8d39e6f
+
+Windows:
+https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
+
 TODO:
 1. Вычислить максимально возможный размер раздела для MBR;
 
