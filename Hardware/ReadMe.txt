@@ -10,6 +10,12 @@ Windows:
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
 
 TODO:
+Создать новую виртуальную машину Windows Server 2003 Enterprise Edition
+и установить на нее Windows Server 2003 Enterprise Edition)
+ISO образ можно найти на Google Drive
+В MyStat прислать скрин рабочего стола Сервера.
+
+DONE:
 1. Вычислить максимально возможный размер раздела для MBR;
 
 
