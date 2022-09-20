@@ -6,6 +6,9 @@ using std::endl;
 
 #define tab "\t"
 
+int** Allocate(const int rows, const int cols);
+void Clear(int** arr, const int rows);
+
 void FillRand(int arr[], const int n);
 void FillRand(int** arr, const int rows, const int cols);
 
@@ -13,6 +16,8 @@ void Print(int* arr, const int n);
 void Print(int** arr, const int rows, const int cols);
 
 int* push_back(int* arr, int& n, int value);
+
+int** push_row_back(int** arr, int& rows, const int cols);
 
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
@@ -45,6 +50,21 @@ void main()
 	cout << "Введите количество строк: "; cin >> rows;
 	cout << "Введите элементов строки: "; cin >> cols;
 
+	int** arr = Allocate(rows, cols);
+	cout << "Memory allocated!" << endl;
+	system("pause");
+	//FillRand(arr, rows, cols);
+	//Print(arr, rows, cols);
+
+	cout << "Добавляем строку в конец массива: " << endl;
+	arr = push_row_back(arr, rows, cols);
+	//Print(arr, rows, cols);
+	cout << "Строка добавлена! Mission complete :-)" << endl;
+	Clear(arr, rows);
+}
+
+int** Allocate(const int rows, const int cols)
+{
 	//1) Создаем массив указателей:
 	int** arr = new int*[rows];
 	//2) Выделяем память под строки двумерного массива:
@@ -52,16 +72,14 @@ void main()
 	{
 		arr[i] = new int[cols] {};
 	}
-
-	//FillRand(arr, rows, cols);
-	Print(arr, rows, cols);
-
-	//1) Сначала удаляются строки двумерного массива:
+	return arr;
+}
+void Clear(int** arr, const int rows)
+{
 	for (int i = 0; i < rows; i++)
 	{
 		delete[] arr[i];
 	}
-	//2) Удаляем массив указателей:
 	delete[] arr;
 }
 
@@ -140,3 +158,22 @@ Debug Assertion Failed:
    когда оператору delete[] передали два раза один и тот же адрес.
 -------------------------------------------------
 */
+
+int** push_row_back(int** arr, int& rows, const int cols)
+{
+	//1) Создаем буферный массив указателей нужного размера:
+	int** buffer = new int*[rows + 1];
+	//2) Копируем адреса строк из исходного массива указателей в буферный:
+	for (int i = 0; i < rows; i++)
+	{
+		buffer[i] = arr[i];
+	}
+	//3) Удаляем исходный массив указателей:
+	delete[] arr;
+	//4) Создаем новую (добавляемую строку):
+	buffer[rows] = new int[cols] {};
+	//5) После добавления строки в массив, количество строк массива увеличивается на 1:
+	rows++;
+	//6) Возвращаем адрес нового массива:
+	return buffer;
+}
