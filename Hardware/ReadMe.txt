@@ -1,4 +1,4 @@
-Electronics workbench program
+п»їElectronics workbench program
 
 TOREAD:
 https://www.ntfs.com/guid-part-table.htm
@@ -10,8 +10,8 @@ Windows:
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
 
 TODO:
-Скачать и загрузить в виртуальную машину Windows XP Professional, 
-по адресу "D:\Images" следующие образы:
+РЎРєР°С‡Р°С‚СЊ Рё Р·Р°РіСЂСѓР·РёС‚СЊ РІ РІРёСЂС‚СѓР°Р»СЊРЅСѓСЋ РјР°С€РёРЅСѓ Windows XP Professional, 
+РїРѕ Р°РґСЂРµСЃСѓ "D:\Images" СЃР»РµРґСѓСЋС‰РёРµ РѕР±СЂР°Р·С‹:
 https://drive.google.com/file/d/137ygEWGI4EygO9Gs9nCBOV02sLQMZ7Vk/view?usp=sharing
 https://drive.google.com/file/d/1B1Rbx8CpftzI3kZZq7y6QnrPkf0RWMGm/view?usp=sharing
 https://drive.google.com/file/d/1ahkpjB8L43dTj__21UXI9stkvFRLOPU0/view?usp=sharing
@@ -19,13 +19,13 @@ https://drive.google.com/file/d/1Qy18dl4U3P9AuL9kZBRVy1qwZl5G213g/view?usp=shari
 http://mirror.yandex.ru/ubuntu-cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.1-desktop-amd64.iso
 
 DONE:
-Создать новую виртуальную машину Windows Server 2003 Enterprise Edition
-и установить на нее Windows Server 2003 Enterprise Edition)
-ISO образ можно найти на Google Drive
-В MyStat прислать скрин рабочего стола Сервера.
+РЎРѕР·РґР°С‚СЊ РЅРѕРІСѓСЋ РІРёСЂС‚СѓР°Р»СЊРЅСѓСЋ РјР°С€РёРЅСѓ Windows Server 2003 Enterprise Edition
+Рё СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅР° РЅРµРµ Windows Server 2003 Enterprise Edition)
+ISO РѕР±СЂР°Р· РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РЅР° Google Drive
+Р’ MyStat РїСЂРёСЃР»Р°С‚СЊ СЃРєСЂРёРЅ СЂР°Р±РѕС‡РµРіРѕ СЃС‚РѕР»Р° РЎРµСЂРІРµСЂР°.
 
 DONE:
-1. Вычислить максимально возможный размер раздела для MBR;
+1. Р’С‹С‡РёСЃР»РёС‚СЊ РјР°РєСЃРёРјР°Р»СЊРЅРѕ РІРѕР·РјРѕР¶РЅС‹Р№ СЂР°Р·РјРµСЂ СЂР°Р·РґРµР»Р° РґР»СЏ MBR;
 
 
 Storage:
@@ -42,7 +42,7 @@ https://www.citilink.ru/product/blok-pitaniya-seasonic-atx-850w-syncro-q704-80-p
 https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
 
 Cooling
-!!!Очень интересный видос про водяные системы охлаждения:
+!!!РћС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅС‹Р№ РІРёРґРѕСЃ РїСЂРѕ РІРѕРґСЏРЅС‹Рµ СЃРёСЃС‚РµРјС‹ РѕС…Р»Р°Р¶РґРµРЅРёСЏ:
 https://www.youtube.com/watch?v=Tidws9NKS6c&t=42s !!!
 
 https://www.dns-shop.ru/product/376bac05499230b1/podstavka-dla-noutbuka-deepcool-multicore-x6-cernyj/characteristics/
@@ -51,7 +51,7 @@ https://www.dns-shop.ru/product/f902c38d9fbd526f/podstavka-dla-noutbuka-deepcool
 https://www.dns-shop.ru/product/ad4bd9b595a83332/podstavka-dla-noutbuka-trust-gxt1125-cernyj/characteristics/
 
 Mainboard:
-Ребят, попробуйте на ark.intel.com найти серию чипсетов для последнего поколения IntelCore и ознакомиться с их характеристиками.
+Р РµР±СЏС‚, РїРѕРїСЂРѕР±СѓР№С‚Рµ РЅР° ark.intel.com РЅР°Р№С‚Рё СЃРµСЂРёСЋ С‡РёРїСЃРµС‚РѕРІ РґР»СЏ РїРѕСЃР»РµРґРЅРµРіРѕ РїРѕРєРѕР»РµРЅРёСЏ IntelCore Рё РѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ СЃ РёС… С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєР°РјРё.
 
 ark.intel.com
 https://www.intel.com/content/www/us/en/processors/processor-numbers.html
@@ -60,11 +60,11 @@ https://www.intel.com/content/www/us/en/processors/processor-numbers.html
 
 TOWATCH:
 https://www.youtube.com/watch?v=tOS3Exwhd9w&t=1s
-https://www.youtube.com/watch?v=z0jQZxH7NgM&t=2s Не для слабонервных!!! :-)
-https://www.youtube.com/watch?v=06MYYB9bl70 Вот как надо тестить процы! (тоже НЕ для слабонервных)))
-https://www.youtube.com/watch?v=XXs0I5kuoX4&t=1097s НЕ ПОВТОРЯЙТЕ ЭТОТ ТРЮК В ДОМАШНИХ УСЛОВИЯХ!!!!!
-https://www.youtube.com/watch?v=FirsCzTnbdQ&t=502s  ЭТОТ ТОЖЕ!!!)
-https://www.youtube.com/watch?v=PGJ4YkEHx34 Ну это вообще жжжесть, я видел как без фена сравли, тоже тисками...
+https://www.youtube.com/watch?v=z0jQZxH7NgM&t=2s РќРµ РґР»СЏ СЃР»Р°Р±РѕРЅРµСЂРІРЅС‹С…!!! :-)
+https://www.youtube.com/watch?v=06MYYB9bl70 Р’РѕС‚ РєР°Рє РЅР°РґРѕ С‚РµСЃС‚РёС‚СЊ РїСЂРѕС†С‹! (С‚РѕР¶Рµ РќР• РґР»СЏ СЃР»Р°Р±РѕРЅРµСЂРІРЅС‹С…)))
+https://www.youtube.com/watch?v=XXs0I5kuoX4&t=1097s РќР• РџРћР’РўРћР РЇР™РўР• Р­РўРћРў РўР Р®Рљ Р’ Р”РћРњРђРЁРќРРҐ РЈРЎР›РћР’РРЇРҐ!!!!!
+https://www.youtube.com/watch?v=FirsCzTnbdQ&t=502s  Р­РўРћРў РўРћР–Р•!!!)
+https://www.youtube.com/watch?v=PGJ4YkEHx34 РќСѓ СЌС‚Рѕ РІРѕРѕР±С‰Рµ Р¶Р¶Р¶РµСЃС‚СЊ, СЏ РІРёРґРµР» РєР°Рє Р±РµР· С„РµРЅР° СЃСЂР°РІР»Рё, С‚РѕР¶Рµ С‚РёСЃРєР°РјРё...
 
 TOREAD:
 https://www.intel.com/content/www/us/en/silicon-innovations/intel-tick-tock-model-general.html
@@ -75,23 +75,23 @@ https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
 https://www.ixbt.com/cpu/cpu-digest-2009.shtml
 
 TODO:
-1. Используя программу AIDA-64 измерить скорость своей ОЗУ и cache-памяти;
-2. В документе 10th Generation Intel Core CPU найти объем cache-памяти процессоров 10-го поколения;
+1. РСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕРіСЂР°РјРјСѓ AIDA-64 РёР·РјРµСЂРёС‚СЊ СЃРєРѕСЂРѕСЃС‚СЊ СЃРІРѕРµР№ РћР—РЈ Рё cache-РїР°РјСЏС‚Рё;
+2. Р’ РґРѕРєСѓРјРµРЅС‚Рµ 10th Generation Intel Core CPU РЅР°Р№С‚Рё РѕР±СЉРµРј cache-РїР°РјСЏС‚Рё РїСЂРѕС†РµСЃСЃРѕСЂРѕРІ 10-РіРѕ РїРѕРєРѕР»РµРЅРёСЏ;
 
 
 TODO:
-Используя программы CPU-Z и AIDA-64 определить дополнительные наборы команд своего процессора;
+РСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕРіСЂР°РјРјС‹ CPU-Z Рё AIDA-64 РѕРїСЂРµРґРµР»РёС‚СЊ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РЅР°Р±РѕСЂС‹ РєРѕРјР°РЅРґ СЃРІРѕРµРіРѕ РїСЂРѕС†РµСЃСЃРѕСЂР°;
 
 =====================	RAM	  =====================
 
 DONE:
-Используя программы CPU-Z и AIDA-64 определить конфигурацию памяти своего компьютера:
-	количество модулей;
-	производитель модулей;
-	тип модулей;
+РСЃРїРѕР»СЊР·СѓСЏ РїСЂРѕРіСЂР°РјРјС‹ CPU-Z Рё AIDA-64 РѕРїСЂРµРґРµР»РёС‚СЊ РєРѕРЅС„РёРіСѓСЂР°С†РёСЋ РїР°РјСЏС‚Рё СЃРІРѕРµРіРѕ РєРѕРјРїСЊСЋС‚РµСЂР°:
+	РєРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРґСѓР»РµР№;
+	РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ РјРѕРґСѓР»РµР№;
+	С‚РёРї РјРѕРґСѓР»РµР№;
 
 https://ru.gecid.com/ram/
 https://www.ixbt.com/mainboard/ddr2-rmma.shtml
 https://www.ixbt.com/mainboard/ddr3-rmma.shtml
 
-Вычислить пропускную способность для микросхем памяти DDR4 и DDR5.
+Р’С‹С‡РёСЃР»РёС‚СЊ РїСЂРѕРїСѓСЃРєРЅСѓСЋ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РґР»СЏ РјРёРєСЂРѕСЃС…РµРј РїР°РјСЏС‚Рё DDR4 Рё DDR5.
