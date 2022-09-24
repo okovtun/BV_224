@@ -10,6 +10,15 @@ Windows:
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
 
 TODO:
+Скачать и загрузить в виртуальную машину Windows XP Professional, 
+по адресу "D:\Images" следующие образы:
+https://drive.google.com/file/d/137ygEWGI4EygO9Gs9nCBOV02sLQMZ7Vk/view?usp=sharing
+https://drive.google.com/file/d/1B1Rbx8CpftzI3kZZq7y6QnrPkf0RWMGm/view?usp=sharing
+https://drive.google.com/file/d/1ahkpjB8L43dTj__21UXI9stkvFRLOPU0/view?usp=sharing
+https://drive.google.com/file/d/1Qy18dl4U3P9AuL9kZBRVy1qwZl5G213g/view?usp=sharing
+http://mirror.yandex.ru/ubuntu-cdimage/xubuntu/releases/22.04/release/xubuntu-22.04.1-desktop-amd64.iso
+
+DONE:
 Создать новую виртуальную машину Windows Server 2003 Enterprise Edition
 и установить на нее Windows Server 2003 Enterprise Edition)
 ISO образ можно найти на Google Drive
