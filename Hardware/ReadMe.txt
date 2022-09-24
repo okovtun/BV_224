@@ -9,7 +9,18 @@ https://gist.github.com/williamgh2019/cc2ad94cc18cb930a0aab42ed8d39e6f
 Windows:
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
 
+Memtest86:
+https://www.memtest86.com/
+
 TODO:
+1. Создать загрузочную флешку GRUB4DOS и добавить в нее все ISO-образы из предыдущего задания;
+2. Скачать последнюю версию Acronis TrueImage, создать в ней загрузочный ISO-образ
+   и добавить его в меню загрузки GRUB4DOS;
+3. При помощи Acronis TrueImage создать образ своей установленной системы;
+
+
+
+DONE:
 Скачать и загрузить в виртуальную машину Windows XP Professional, 
 по адресу "D:\Images" следующие образы:
 https://drive.google.com/file/d/137ygEWGI4EygO9Gs9nCBOV02sLQMZ7Vk/view?usp=sharing
