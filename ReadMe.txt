@@ -14,10 +14,10 @@ https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B3%D0%B5%D1%80%D1%81%D0%BA%D
 https://docs.microsoft.com/en-us/windows/win32/stg/coding-style-conventions
 
 TODO:
-1. Оптимизировать функции для работы с двумерными динамическими массивами;
-2. Создать ветку DynamicTemplated и в этой ветке шаблонизировать все функции 
+1. Оптимизировать функции для работы с двумерными динамическими массивами;				DONE
+2. Создать ветку DynamicTemplated и в этой ветке шаблонизировать все функции 			DONE
    для работы с динамическими массивами, как с одномерными, так и с двумерными;
-3. От ветки DynamicTemplated создать ветку DynamicTemplatedOptimisation, и в этой ветке
+3. От ветки DynamicTemplated создать ветку DynamicTemplatedOptimisation, и в этой ветке	
    еще лучше оптимизировать функции для работы с двумерными динамическими массивами;
 
 DONE:
