@@ -1,4 +1,5 @@
 ﻿#include<iostream>
+#include<ctime>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -21,9 +22,12 @@ int** push_row_back(int** arr, int& rows, const int cols);
 int** pop_row_back(int** arr, int& rows, const int cols);
 
 void push_col_back(int** arr, const int rows, int& cols);
+void pop_col_back(int** arr, const int rows, int& cols);
 
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
+
+//#define EXECUTION_TIME
 
 void main()
 {
@@ -54,22 +58,58 @@ void main()
 	cout << "Введите элементов строки: "; cin >> cols;
 
 	int** arr = Allocate(rows, cols);
+#ifdef EXECUTION_TIME
 	cout << "Memory allocated!" << endl;
-	//system("pause");
-	//FillRand(arr, rows, cols);
-	//Print(arr, rows, cols);
+	system("pause");
+#endif // EXECUTION_TIME
+
+#ifndef EXECUTION_TIME
+	FillRand(arr, rows, cols);
+	Print(arr, rows, cols);
+#endif // !EXECUTION_TIME
+
 
 	cout << "Добавляем строку в конец массива: " << endl;
+	clock_t start = clock();
 	arr = push_row_back(arr, rows, cols);
-	//Print(arr, rows, cols);
+#ifndef EXECUTION_TIME
+	Print(arr, rows, cols);
+#endif // !EXECUTION_TIME
+
+#ifdef EXECUTION_TIME
 	cout << "Строка добавлена! Mission complete :-)" << endl;
+	clock_t end = clock();
+	cout << "Время выполнения операции: " << end - start << " тактов" << endl;
+#endif // EXECUTION_TIME
+
 	arr = pop_row_back(arr, rows, cols);
-	//Print(arr, rows, cols);
+#ifndef EXECUTION_TIME
+	Print(arr, rows, cols);
+#endif // !EXECUTION_TIME
+
+#ifdef EXECUTION_TIME
 	cout << "Для добавления столбца нажмите любую клавишу...\n";
 	system("pause");
+	start = clock();
+#endif // EXECUTION_TIME
+
 	push_col_back(arr, rows, cols);
-	//Print(arr, rows, cols);
+#ifndef EXECUTION_TIME
+	Print(arr, rows, cols);
+#endif // !EXECUTION_TIME
+
+#ifdef EXECUTION_TIME
+	end = clock();
+	CLOCKS_PER_SEC;
 	cout << "Столбец добавлен! Mission complete :-)" << endl;
+	cout << "Время выполнения операции: " << end - start << " тактов" << endl;
+#endif // EXECUTION_TIME
+
+	pop_col_back(arr, rows, cols);
+#ifndef EXECUTION_TIME
+	Print(arr, rows, cols);
+#endif // !EXECUTION_TIME
+
 	Clear(arr, rows);
 }
 
@@ -214,4 +254,15 @@ void push_col_back(int** arr, const int rows, int& cols)
 	//5) После того как в каждую строку добавлен элемент, 
 	//	 в массиве появляется еще один столбец
 	cols++;
+}
+void pop_col_back(int** arr, const int rows, int& cols)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		int* buffer = new int[cols - 1]{};
+		for (int j = 0; j < cols - 1; j++)buffer[j] = arr[i][j];
+		delete[] arr[i];
+		arr[i] = buffer;
+	}
+	cols--;
 }
