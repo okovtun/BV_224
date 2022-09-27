@@ -18,6 +18,9 @@ void Print(int** arr, const int rows, const int cols);
 int* push_back(int* arr, int& n, int value);
 
 int** push_row_back(int** arr, int& rows, const int cols);
+int** pop_row_back(int** arr, int& rows, const int cols);
+
+void push_col_back(int** arr, const int rows, int& cols);
 
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
@@ -52,7 +55,7 @@ void main()
 
 	int** arr = Allocate(rows, cols);
 	cout << "Memory allocated!" << endl;
-	system("pause");
+	//system("pause");
 	//FillRand(arr, rows, cols);
 	//Print(arr, rows, cols);
 
@@ -60,6 +63,13 @@ void main()
 	arr = push_row_back(arr, rows, cols);
 	//Print(arr, rows, cols);
 	cout << "Строка добавлена! Mission complete :-)" << endl;
+	arr = pop_row_back(arr, rows, cols);
+	//Print(arr, rows, cols);
+	cout << "Для добавления столбца нажмите любую клавишу...\n";
+	system("pause");
+	push_col_back(arr, rows, cols);
+	//Print(arr, rows, cols);
+	cout << "Столбец добавлен! Mission complete :-)" << endl;
 	Clear(arr, rows);
 }
 
@@ -176,4 +186,32 @@ int** push_row_back(int** arr, int& rows, const int cols)
 	rows++;
 	//6) Возвращаем адрес нового массива:
 	return buffer;
+}
+int** pop_row_back(int** arr, int& rows, const int cols)
+{
+	//1) Удаляем строку из памяти:
+	delete[] arr[rows - 1];
+	//2) Переопределяем массив указателей:
+	int** buffer = new int*[--rows]{};
+	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
+	delete[] arr;
+	return buffer;
+}
+
+void push_col_back(int** arr, const int rows, int& cols)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		//1) Создаем новую строку нужного размера (1 элемент больше):
+		int* buffer = new int[cols + 1]{};
+		//2) Копируем все элементы i-й строки в новую строку (buffer)
+		for (int j = 0; j < cols; j++)buffer[j] = arr[i][j];
+		//3) Удаляем исходную строку:
+		delete[] arr[i];
+		//4) Подменяем исходную строку новой:
+		arr[i] = buffer;
+	}
+	//5) После того как в каждую строку добавлен элемент, 
+	//	 в массиве появляется еще один столбец
+	cols++;
 }
