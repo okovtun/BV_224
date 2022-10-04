@@ -12,7 +12,13 @@ https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sha
 Memtest86:
 https://www.memtest86.com/
 
+Unattended:
+http://unattendedxp.com/
+
 TODO:
+Изучить политики паролей и политики блокировки учетных записей.
+
+DONE:
 1. Создать загрузочную флешку GRUB4DOS и добавить в нее все ISO-образы из предыдущего задания;
 2. Скачать последнюю версию Acronis TrueImage, создать в ней загрузочный ISO-образ
    и добавить его в меню загрузки GRUB4DOS;
