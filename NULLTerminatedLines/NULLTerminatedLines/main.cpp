@@ -1,4 +1,4 @@
-//NULLTerminatedLines
+п»ї//NULLTerminatedLines
 #include<iostream>
 #include<Windows.h>
 using namespace std;
@@ -8,6 +8,9 @@ using std::endl;
 
 int StringLength(const char str[]);
 void upper_case(char str[]);
+void lower_case(char str[]);
+void shrink(char str[]);
+bool is_palindrome(char str[]);
 
 //#define EXAMPLE_1
 #define EXAMPLE_2
@@ -16,39 +19,105 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef EXAMPLE_1
-	//ASCII-символ с кодом 0 - '\0'
+	//ASCII-СЃРёРјРІРѕР» СЃ РєРѕРґРѕРј 0 - '\0'
 //char str[] = { 'H', 'e', 'l', 'l', 'o', 0 };
 	char str[] = "Hello";
-	//str[]   - строковая переменная
-	//"Hello" - строковая константа
+	//str[]   - СЃС‚СЂРѕРєРѕРІР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ
+	//"Hello" - СЃС‚СЂРѕРєРѕРІР°СЏ РєРѕРЅСЃС‚Р°РЅС‚Р°
 	cout << str << endl;
 	cout << typeid(str).name() << endl;
 	cout << typeid("Hello").name() << endl;
 #endif // EXAMPLE_1
-
-	const int SIZE = 20;
-	char str[SIZE] = {};
-	cout << (int)'\0' << endl;
-	cout << (int)'0' << endl;
-	cout << "Введите строку: ";
+	//for (int i = 0; i < 256; i++)cout << i << "\t" << char(i) << endl;
+	/*cout << (int)'A' << endl;
+	cout << (int)'a' << endl;
+	cout << 'A' - 'a' << endl;
+	cout << (int)'РЃ' << endl;
+	cout << (int)'С‘' << endl;*/
+	const int SIZE = 256;
+	char str[SIZE] = "РђСЂРіРµРЅС‚РёРЅР° РјР°РЅРёС‚ РЅРµРіСЂР°";
+	/*cout << (int)'\0' << endl;
+	cout << (int)'0' << endl;*/
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ";
 	//cin >> str;
 	SetConsoleCP(1251);
 	cin.getline(str, SIZE);
 	SetConsoleCP(866);
 	cout << str << endl;
-	cout << "Длина строки: " << StringLength(str) << endl;
-	cout << "Длина строки: " << strlen(str) << endl;
-	cout << "Длина строки в Байтах: " << sizeof(str) << endl;
+	/*cout << "Р”Р»РёРЅР° СЃС‚СЂРѕРєРё: " << StringLength(str) << endl;
+	cout << "Р”Р»РёРЅР° СЃС‚СЂРѕРєРё: " << strlen(str) << endl;
+	cout << "Р”Р»РёРЅР° СЃС‚СЂРѕРєРё РІ Р‘Р°Р№С‚Р°С…: " << sizeof(str) << endl;
+	lower_case(str);
+	cout << str << endl;
+	shrink(str);
+	cout << str << endl;*/
+	cout << "РЎС‚СЂРѕРєР° " << (is_palindrome(str) ? "" : "РќР• ") << "СЏРІР»СЏРµС‚СЃСЏ РїР°Р»РёРЅРґСЂРѕРјРѕРј" << endl;
+	cout << str << endl;
 }
 
 int StringLength(const char str[])
 {
-	//Принимает строку, и возвращает размер строки в символах
+	//РџСЂРёРЅРёРјР°РµС‚ СЃС‚СЂРѕРєСѓ, Рё РІРѕР·РІСЂР°С‰Р°РµС‚ СЂР°Р·РјРµСЂ СЃС‚СЂРѕРєРё РІ СЃРёРјРІРѕР»Р°С…
 	int i = 0;
 	for (; str[i]; i++);
 	return i;
 }
 void upper_case(char str[])
 {
-	
+	for (int i = 0; str[i]; i++)
+	{
+		/*if (str[i] >= 'a' && str[i] <= 'z')str[i] -= ' ';
+		if (str[i] >= 'Р°' && str[i] <= 'СЏ')str[i] -= ' ';
+		if (str[i] == 'С‘') str[i] = 'РЃ';*/
+		str[i] = toupper(str[i]);
+		//Р¤СѓРЅРєС†РёСЏ toupper(char s); РїСЂРёРЅРёРјР°РµС‚ Р±СѓРєРІСѓ, Рё РІРѕР·РІСЂР°С‰Р°РµС‚ С‚Р°РєСѓСЋ Р¶Рµ Р·Р°РіР»Р°РІРЅСѓСЋ Р±СѓРєРІСѓ.
+	}
+}
+void lower_case(char str[])
+{
+	for (int i = 0; str[i]; i++)
+	{
+		str[i] = tolower(str[i]);
+	}
+}
+void shrink(char str[])
+{
+	for (int i = 0; str[i]; i++)
+	{
+		while(str[i] == ' ' && str[i + 1] == ' ')
+		{
+			for (int j = i + 1; str[j]; j++)
+			{
+				str[j] = str[j + 1];
+			}
+		}
+	}
+}
+void remove_symbol(char str[], const char symbol)
+{
+	for (int i = 0; str[i]; i++)
+	{
+		while (str[i] == symbol)
+		{
+			for (int j = i; str[j]; j++)str[j] = str[j + 1];
+		}
+	}
+}
+bool is_palindrome(char str[])
+{
+	char* buffer = new char[strlen(str) + 1]{};
+	strcpy(buffer, str);
+	lower_case(buffer);
+	remove_symbol(buffer, ' ');
+	int size = strlen(buffer);
+	for (int i = 0; i < size; i++)
+	{
+		if (buffer[i] != buffer[size - 1 - i])
+		{
+			delete[] buffer;
+			return false;
+		}
+	}
+	delete[] buffer;
+	return true;
 }
