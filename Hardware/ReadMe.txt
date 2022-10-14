@@ -15,6 +15,9 @@ https://www.memtest86.com/
 Unattended:
 http://unattendedxp.com/
 
+Network:
+https://www.youtube.com/watch?v=1QHrI3bZwpI&list=PLeqyOOqxeiINK1krBBk-nu_z52oubMPrO&index=51
+
 TODO:
 Изучить политики паролей и политики блокировки учетных записей.
 
